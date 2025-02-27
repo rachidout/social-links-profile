@@ -1,0 +1,95 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+:root {
+  --background-color: hsl(0, 0%, 8%);
+  --card-color: hsl(0, 0%, 12%);
+  --button-color: hsl(0, 0%, 20%);
+  --primay-color: hsl(75, 94%, 57%);
+  --foreground-color: rgb(255, 255, 255);
+  --paragraph-color: rgb(160, 158, 158);
+}
+body {
+  font-family: sans-serif;
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+  position: relative;
+  height: 100vh;
+}
+
+.main {
+  text-align: center;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--card-color);
+  width: 100%;
+  max-width: 400px;
+  border-radius: 6px;
+}
+
+/* .section-two {
+  margin-top: 15px;
+}
+.main p {
+  font-size: 14px;
+}
+
+}*/
+.image {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.section-one h1 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  font-family: "Times New Roman", Times, serif;
+}
+.section-one h2 {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--primay-color);
+  margin-bottom: 16px;
+}
+.section-one p {
+  font-size: 14px;
+  color: var(--paragraph-color);
+  margin-bottom: 18px;
+}
+.section-two ul li {
+  list-style: none;
+}
+
+.section-two a {
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 14px;
+  display: inline-block;
+  color: var(--foreground-color);
+  text-decoration: none;
+  width: 90%;
+  border-radius: 10px;
+  background-color: var(--button-color);
+  margin-bottom: 2px;
+}
+.section-two li:not(:last-child) a {
+  margin-bottom: 14px;
+}
+
+.section-two a:hover {
+  background-color: var(--primay-color);
+  color: var(--background-color);
+  transition-duration: 400ms;
+}
+.section-two li:last-child {
+  margin-bottom: 20px;
+}
